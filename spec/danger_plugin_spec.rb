@@ -11,7 +11,7 @@ module Danger
     before do
       @dangerfile = testing_dangerfile
       @kiriban = @dangerfile.kiriban
-      allow(@kiriban.git).to receive(:pr_json).and_return({'id': pr_id})
+      allow(@kiriban.github).to receive(:pr_json).and_return({'id': pr_id})
     end
 
     describe '100' do

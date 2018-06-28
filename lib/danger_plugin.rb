@@ -26,7 +26,7 @@ module Danger
     #
     # return [Integer]
     def number
-      git.pr_json[:id].to_i
+      github.pr_json[:id].to_i
     end
 
   end
